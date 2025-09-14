@@ -1,0 +1,135 @@
+{
+  "qa_pairs": [
+    {
+      "question": "What are the main improvements introduced in the Seedance 1.0 video generation model?",
+      
+      "answer": "Seedance 1.0 introduces several core technical improvements, including multi-source data curation with meaningful video captioning for comprehensive learning across diverse scenarios, and an efficient architecture design with a proposed training paradigm that supports multi-shot generation and jointly learns text-to-video and image-to-video tasks.",
+      
+      "context": "arXiv:2506.09113v2 [cs.CV] 28 Jun 2025 Seedance 1.0: Exploring the Boundaries of Video Generation Models ByteDance Seed Abstract Notable breakthroughs in diffusion modeling have propelled rapid improvements in video generation, yet current foundational model still face critical challenges in simultaneously balancing prompt following, motion plausibility, and visual quality. In this report, we introduce Seedance 1.0 , a high-performance and inference-efficient video foundation generation model that integrates several core technical improvements: (i) multi-source data curation augmented with precision and meaningful video captioning, enabling comprehensive learning across diverse scenarios; (ii) an efficient architecture design with proposed training paradigm, which allows for natively supporting multi-shot generation and jointly learning of both text-to-video and image-to-video tasks",
+      "source_document": "Seedance 1.0 - 2506.09113v2.pdf",
+      "chunk_id": "chunk_0_b0cebfaa",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What are the key features that differentiate Seedance 1.0 from other state-of-the-art video generation models?",
+      "answer": "Seedance 1.0 is distinguished by its high-quality and fast video generation, superior spatiotemporal fluidity with structural stability, precise instruction adherence in complex multi-subject contexts, and native multi-shot narrative coherence with consistent subject representation.",
+      "context": ". (iii) carefully-optimized post-training approaches leveraging fine-grained supervised fine-tuning, and video-specific RLHF with multi-dimensional reward mechanisms for comprehensive performance improvements; (iv) excellent model acceleration achieving 10 ×inference speedup through multi- stage distillation strategies and system-level optimizations. Seedance 1.0 can generate a 5-second video at 1080p resolution only with 41.4 seconds (NVIDIA-L20). Compared to state-of-the-art video generation models, Seedance 1.0 stands out with high-quality and fast video generation having superior spatiotemporal fluidity with structural stability, precise instruction adherence in complex multi-subject contexts, native multi-shot narrative coherence with consistent subject representation. Seedance 1.0 is now accessible on Volcano Engineα. Official Page: https://seed.bytedance.com/seedance αModel ID: Doubao-Seedance-1.0-pro Figure 1 Overall evaluation. Left: Text-to-Video; Right: Image-to-Video",
+      "source_document": "Seedance 1.0 - 2506.09113v2.pdf",
+      "chunk_id": "chunk_1_ea95b4c9",
+      "metadata": {
+        "question_type": "analytical",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What are the main tasks mentioned in the text that have seen progress due to advancements in large multimodal models?",
+      "answer": "The main tasks mentioned are text-to-video (T2V) generation and video-to-text (V2T) interpretation.",
+      "context": "LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation Jiarui Wang1, Huiyu Duan1,2, Ziheng Jia1, Yu Zhao1, Woo Yi Yang1, Zicheng Zhang1, Zijian Chen1, Juntong Wang1, Yuke Xing1, Guangtao Zhai1,2, Xiongkuo Min1∗ 1Institute of Image Communication and Network Engineering, 2MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University, Shanghai, China Abstract Recent advancements in large multimodal models (LMMs) have driven substantial progress in both text-to-video (T2V) generation and video-to-text (V2T) interpreta- tion tasks. However, current AI-generated videos (AIGVs) still exhibit limitations in terms of perceptual quality and text-video alignment. Therefore, a reliable and scalable automatic model for AIGV evaluation is desirable, which heavily relies on the scale and quality of human annotations",
+      "source_document": "Love frramework - 2505.12098v1.pdf",
+      "chunk_id": "chunk_0_cbca2c44",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What is AIGVE-60K, and what are its key features?",
+      "answer": "AIGVE-60K is a comprehensive dataset and benchmark for AI-Generated Video Evaluation. Its key features include 3,050 extensive prompts across 20 fine-grained task dimensions, the largest human annotations with 120K mean-opinion scores (MOSs) and 60K question-answering (QA) pairs annotated on 58,500 videos from 30 T2V models, and bidirectional benchmarking for both T2V generation and V2T interpretation capabilities.",
+      "context": ". Therefore, a reliable and scalable automatic model for AIGV evaluation is desirable, which heavily relies on the scale and quality of human annotations. To this end, we present AIGVE-60K , a comprehensive dataset and benchmark for AI-Generated Video Evaluation, which features (i) comprehensive tasks , encompassing 3,050 extensive prompts across 20 fine-grained task dimensions, (ii) the largest human annotations , including 120K mean-opinion scores (MOSs) and 60K question-answering (QA) pairs an- notated on 58,500 videos generated from 30 T2V models, and (iii) bidirectional benchmarking and evaluating for both T2V generation and V2T interpretation capabilities. Based on AIGVE-60K, we propose LOVE , aLMM-based metric for AIG VEvaluation from multiple dimensions including perceptual preference, text-video correspondence, and task-specific accuracy in terms of both instance level and model level",
+      "source_document": "Love frramework - 2505.12098v1.pdf",
+      "chunk_id": "chunk_1_949f05da",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What is the primary purpose of the GENIE model introduced in the paper?",
+      "answer": "The primary purpose of the GENIE model is to serve as a novel diffusion language model pre-training framework for text generation, which generates text by transforming a random noise sequence into a coherent text sequence.",
+      "context": "Text Generation with Diffusion Language Models: A Pre-training Approach with Continuous Paragraph Denoise Zhenghao Lin1 2Yeyun Gong3Yelong Shen4Tong Wu5 2Zhihao Fan6 2 Chen Lin1Nan Duan3Weizhu Chen4 Abstract In this paper, we introduce a novel d Iffusion language mod El pre-training framework for text generation, which we call GENIE .GENIE is a large-scale pretrained diffusion language model that consists of an encoder and a diffusion-based decoder, which can generate text by gradually transforming a random noise sequence into a coherent text sequence. To pre-train GENIE on a large-scale language corpus, we design a new continuous paragraph denoise objective, which encourages the diffusion-decoder to reconstruct a clean text paragraph from a corrupted version, while preserving the semantic and syntactic coherence. We evaluate GENIE on four downstream text generation benchmarks, namely XSUM,CNN/D AILY MAIL,GIGA- WORD , and COMMON GEN",
+      "source_document": "Text diffusion - 2212.11685v2.pdf",
+      "chunk_id": "chunk_0_00b7374b",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What are the four downstream text generation benchmarks on which GENIE was evaluated?",
+      "answer": "GENIE was evaluated on the XSUM, CNN/DAILY MAIL, GIGAWORD, and COMMON GEN benchmarks.",
+      "context": ". We evaluate GENIE on four downstream text generation benchmarks, namely XSUM,CNN/D AILY MAIL,GIGA- WORD , and COMMON GEN. Our experimental results show that GENIE achieves comparable performance with the state-of-the-art autore- gressive models on these benchmarks, and generates more diverse text samples. The code and models of GENIE are available athttps://github.com/microsoft/ ProphetNet/tree/master/GENIE . 1. Introduction Text generation is a crucial task in natural language process- ing, which aims to produce ﬂuent and coherent texts for var- ious applications. Previous text generation methods mainly relied on recurrent neural networks (RNNs) (Pawade et al., 2018; Song et al., 2018; Gu et al., 2016a; Qi et al., 2021), which generate texts sequentially from left to right. How- ever, RNNs suffer from issues such as long-term dependency and exposure bias",
+      "source_document": "Text diffusion - 2212.11685v2.pdf",
+      "chunk_id": "chunk_1_4274334f",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What are some of the technical improvements made in Seedream 3.0 compared to Seedream 2.0?",
+      "answer": "Seedream 3.0 includes advancements that address alignment with complicated prompts, fine-grained typography generation, suboptimal visual aesthetics and fidelity, and limited image resolutions. These improvements span the entire pipeline from data construction to model deployment.",
+      "context": "arXiv:2504.11346v3 [cs.CV] 28 Jun 2025 Seedream 3.0 Technical Report ByteDance Seed Abstract We present Seedream 3.0, a high-performance Chinese-English bilingual image generation founda- tion model. We develop several technical improvements to address existing challenges in Seedream 2.0, including alignment with complicated prompts, fine-grained typography generation, suboptimal visual aesthetics and fidelity, and limited image resolutions. Specifically, the advancements of Seedream 3.0 stem from improvements across the entire pipeline, from data construction to model deployment. At the data stratum, we double the dataset using a defect-aware training paradigm and a dual-axis collaborative data-sampling framework. Furthermore, we adopt several effective techniques such as mixed-resolution training, cross-modality RoPE, representation alignment loss, and resolution-aware timestep sampling in the pre-training phase",
+      "source_document": "Seedream 3.0 - 2504.11346v3.pdf",
+      "chunk_id": "chunk_0_12d03395",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What advancements does Seedream 3.0 offer compared to Seedream 2.0?",
+      "answer": "Seedream 3.0 demonstrates significant improvements over Seedream 2.0 by enhancing overall capabilities, particularly for text-rendering in complicated Chinese characters, which is crucial for professional typography generation. Additionally, it provides native high-resolution output of up to 2K, allowing for the generation of images with high visual quality.",
+      "context": ". During the post-training stage, we utilize diversified aesthetic captions in SFT, and a VLM-based reward model with scaling, thereby achieving outputs that well align with human preferences. Furthermore, See- dream 3.0 pioneers a novel acceleration paradigm. By employing consistent noise expectation and importance-aware timestep sampling, we achieve a 4 to 8 times speedup while maintaining image quality. Seedream 3.0 demonstrates significant improvements over Seedream 2.0: it enhances overall capabilities, in particular for text-rendering in complicated Chinese characters which is important to professional typography generation. In addition, it provides native high-resolution output (up to 2K), allowing it to generate images with high visual quality. Seedream 3.0 is now accessible on Volcano Engineα",
+      "source_document": "Seedream 3.0 - 2504.11346v3.pdf",
+      "chunk_id": "chunk_1_04097006",
+      "metadata": {
+        "question_type": "analytical",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What is the main purpose of AlphaEvolve as described in the text?",
+      "answer": "The main purpose of AlphaEvolve is to enhance the capabilities of state-of-the-art LLMs on challenging tasks, specifically in tackling open scientific problems and optimizing critical pieces of computational infrastructure.",
+      "context": "2025-5-14 AlphaEvolve : A coding agent for scientific and algorithmic discovery Alexander Novikov*, Ngân V ˜u*, Marvin Eisenberger*, Emilien Dupont*, Po-Sen Huang*, Adam Zsolt Wagner*, Sergey Shirobokov*, Borislav Kozlovskii*, Francisco J. R. Ruiz, Abbas Mehrabian, M. Pawan Kumar, Abigail See, Swarat Chaudhuri, George Holland, Alex Davies, Sebastian Nowozin, Pushmeet Kohli and Matej Balog* Google DeepMind1 In this white paper, we present AlphaEvolve , an evolutionary coding agent that substantially enhances capabilities of state-of-the-art LLMs on highly challenging tasks such as tackling open scientific problems or optimizing critical pieces of computational infrastructure. AlphaEvolve orchestrates an autonomous pipeline of LLMs, whose task is to improve an algorithm by making direct changes to the code",
+      "source_document": "AlphaEvolve.pdf",
+      "chunk_id": "chunk_0_8e174d54",
+      "metadata": {
+        "question_type": "conceptual",
+        "generated_by": "gpt-4o-mini"
+      }
+    },
+    {
+      "question": "What are some specific outcomes that AlphaEvolve achieved when optimizing components at Google?",
+      "answer": "AlphaEvolve developed a more efficient scheduling algorithm for data centers, found a functionally equivalent simplification in the circuit design of hardware accelerators, and accelerated the training of the LLM underpinning AlphaEvolve itself.",
+      "context": ". AlphaEvolve orchestrates an autonomous pipeline of LLMs, whose task is to improve an algorithm by making direct changes to the code. Using an evolutionary approach, continuously receiving feedback from one or more evaluators, AlphaEvolve iteratively improves the algorithm, potentially leading to new scientific and practical discoveries. We demonstrate the broad applicability of this approach by applying it to a number of important com- putational problems. When applied to optimizing critical components of large-scale computational stacks at Google, AlphaEvolve developed a more efficient scheduling algorithm for data centers, found a functionally equivalent simplification in the circuit design of hardware accelerators, and acceler- ated the training of the LLM underpinning AlphaEvolve itself",
+      "source_document": "AlphaEvolve.pdf",
+      "chunk_id": "chunk_1_62f78e78",
+      "metadata": {
+        "question_type": "factual",
+        "generated_by": "gpt-4o-mini"
+      }
+    }
+  ],
+  "metadata": {
+    "total_qa_pairs": 10,
+    "source_documents": [
+      "Seedance 1.0 - 2506.09113v2.pdf",
+      "Love frramework - 2505.12098v1.pdf",
+      "Text diffusion - 2212.11685v2.pdf",
+      "Seedream 3.0 - 2504.11346v3.pdf",
+      "AlphaEvolve.pdf"
+    ],
+    "generation_config": {
+      "chunk_size": 1000,
+      "chunk_overlap": 200,
+      "chunker_type": "recursive",
+      "questions_per_chunk": 1,
+      "max_chunks_per_doc": 2,
+      "model": "gpt-4o-mini"
+    },
+    "generated_at": "2025-08-06 17:45:27"
+  }
+}

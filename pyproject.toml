@@ -1,0 +1,18 @@
+[project]
+name = "paperpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain-text-splitters>=0.3.9",
+    "numpy>=2.3.2",
+    "openai>=1.98.0",
+    "pprintpp>=0.4.0",
+    "pydantic>=2.11.7",
+    "pypdf2>=3.0.1",
+    "streamlit>=1.47.1",
+    "tabulate>=0.9.0",
+    "vecs>=0.4.5",
+]
