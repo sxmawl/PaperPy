@@ -1,6 +1,6 @@
-# RAG Evaluation System
+# PaperPy
 
-A comprehensive evaluation system for RAG (Retrieval-Augmented Generation) systems using synthetic question-answer pairs generated from PDF documents.
+A chat with research paper application used to explain comprehensive evaluation system for RAG (Retrieval-Augmented Generation) systems using synthetic question-answer pairs generated from PDF documents.
 
 ## Features
 
